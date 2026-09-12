@@ -12,7 +12,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
 const firebaseConfig = {
   apiKey: "AIzaSyBSCqSsBTXk9Q8sBX88NgrdDHUAHT0Cq6I",
   authDomain: "lumalia.firebaseapp.com",
-  projectId: "lumania",
+  projectId: "lumalia",
   storageBucket: "lumalia.firebasestorage.app",
   messagingSenderId: "189011821397",
   appId: "1:189011821397:web:03c8609d35d488dce2a5dc"
