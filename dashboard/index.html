@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Lumania</title>
+  <link rel="stylesheet" href="/dashboard/dashboard.css">
+</head>
+<body>
+  <div id="loading">Vérification des accès…</div>
+
+  <div id="app" style="display: none;">
+    <header class="topbar">
+      <div class="brand">Lumania · Dashboard</div>
+      <div class="user">
+        <span id="user-email"></span>
+        <button id="logout-btn">Déconnexion</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1>Bienvenue, <span id="user-name">membre HA</span> 👋</h1>
+      <p>Voici ton espace réservé aux membres du grade HA.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h2>Section 1</h2>
+          <p>À remplir plus tard.</p>
+        </div>
+        <div class="card">
+          <h2>Section 2</h2>
+          <p>À remplir plus tard.</p>
+        </div>
+        <div class="card">
+          <h2>Section 3</h2>
+          <p>À remplir plus tard.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/dashboard/dashboard.js"></script>
+</body>
+</html>
