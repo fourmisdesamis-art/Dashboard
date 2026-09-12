@@ -11,10 +11,10 @@ const form = document.getElementById("login-form");
 const errorMsg = document.getElementById("error-msg");
 const submitBtn = document.getElementById("submit-btn");
 
-// Redirection automatique si déjà connecté + grade HA
+// Redirection auto si déjà connecté + grade HA
 onAuthStateChanged(auth, async (user) => {
   if (user && (await hasHAGrade(user.uid))) {
-    window.location.href = "/dashboard/";
+    window.location.href = "dashboard/";
   }
 });
 
@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
     const cred = await signInWithEmailAndPassword(auth, email, password);
 
     if (await hasHAGrade(cred.user.uid)) {
-      window.location.href = "/dashboard/";
+      window.location.href = "dashboard/";
     } else {
       errorMsg.textContent = "Accès refusé : grade HA requis.";
       await signOut(auth);
