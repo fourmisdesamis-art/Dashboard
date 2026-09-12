@@ -9,13 +9,13 @@ const logoutBtn = document.getElementById("logout-btn");
 
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.href = "/";
+    window.location.href = "../";
     return;
   }
 
   const ok = await hasHAGrade(user.uid);
   if (!ok) {
-    window.location.href = "/";
+    window.location.href = "../";
     return;
   }
 
@@ -27,5 +27,5 @@ onAuthStateChanged(auth, async (user) => {
 
 logoutBtn.addEventListener("click", async () => {
   await signOut(auth);
-  window.location.href = "/";
+  window.location.href = "../";
 });
